@@ -71,7 +71,7 @@ def package_setup():
         long_description=readme(),
         license=license(),
         name=MAIN_PACKAGE,
-        keywords=KEYWORDS
+        keywords=KEYWORDS,
         version=VERSION,
         packages=find_packages(exclude=['tests', 'tests.*']),
         setup_requires=['pytest-runner'],
