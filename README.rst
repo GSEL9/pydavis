@@ -2,7 +2,7 @@ Installation_ | Usage_
 
 
 ##################
-pydavis
+pydavis_ package
 ##################
 
 A package intended the logging of weather data parameters monitored by
@@ -37,7 +37,7 @@ By instantiating the ``DataLogger`` with an URL, the logging sequence can then
 be initiated and data stored according to specified format. Any logging
 sequence is aborted with ``CTRL + C``.
 
-Storing data in a _MySQL_ database:
+Storing data in a _MySQL_ database
 
 .. code-block:: python
 
@@ -52,7 +52,7 @@ The necessary arguments are *MySQL* login credentials, the name of the database
 and the table. The ``logger`` will create the database and the table if
 necessary.
 
-Storing data in a file:
+Storing data in a file
 
 .. code-block:: python
 
