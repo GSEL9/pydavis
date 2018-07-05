@@ -14,6 +14,9 @@ __email__ = 'Langberg91@gmail.no'
 __status__ = 'Operational'
 
 
+__version__ = '0.1.3'
+
+
 from . import utils
 
 from .data_logging import DataLogger
