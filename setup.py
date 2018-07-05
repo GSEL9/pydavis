@@ -22,9 +22,9 @@ VERSION = '0.1.1'
 
 KEYWORDS = 'web scraping, database, weather data'
 
-TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
-
 EXCLUDE = ['tests', 'docs', 'build']
+
+TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
 
 
 def readme():
