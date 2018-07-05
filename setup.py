@@ -16,27 +16,25 @@ __status__ = 'Operational'
 
 from setuptools import setup, find_packages
 
-AUTHOR = 'Severin Langberg'
-EMAIL = 'Langberg91@gmail.com'
-
 MAIN_PACKAGE = 'pydavis'
-VERSION = '0.1.3'
-DESCRIPTION = "Tools to stream weather data from Davis weather stations."
+DESCRIPTION = 'Tools to stream weather data from Davis weather stations.'
+LICENSE = "MIT"
 URL = 'https://github.com/GSEL9/pydavis'
+AUTHOR = 'Severin Langberg'
+EMAIL = 'langberg91@gmail.com'
+VERSION = '0.2.1'
 
 TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
 
 KEYWORDS = ['data science', 'data analytics', 'web scraping', 'database',
-            'weather data', 'data collection']
+            'weather data', 'data collection', 'davis']
 
 CLASSIFIERS = ['Development Status :: 3 - Alpha',
                'Environment :: Console',
                'Intended Audience :: Science/Research',
                'License :: OSI Approved :: MIT License',
                'Natural Language :: English',
-               'Programming Language :: Python :: 3',
-               'Topic :: Scientific/Engineering :: Chemistry',
-               'Topic :: Scientific/Engineering :: Physics']
+               'Programming Language :: Python :: 3']
 
 
 def readme():
@@ -62,23 +60,22 @@ def license():
 
 def package_setup():
 
-    setup(
-        author=AUTHOR,
-        author_email=EMAIL,
-        description=DESCRIPTION,
-        url=URL,
-        install_requires=requirements(),
-        long_description=readme(),
-        license=license(),
-        name=MAIN_PACKAGE,
-        keywords=KEYWORDS,
-        version=VERSION,
-        packages=find_packages(exclude=['tests', 'tests.*']),
-        setup_requires=['pytest-runner'],
-        tests_require=TESTS_REQUIRE,
-        classifiers=CLASSIFIERS
-    )
-
+    setup(name=MAIN_PACKAGE,
+          version=VERSION,
+          url=URL,
+          description=DESCRIPTION,
+          author=AUTHOR,
+          author_email=EMAIL,
+          include_package_data=True,
+          install_requires=requirements(),
+          keywords=KEYWORDS,
+          license=LICENSE,
+          long_description=readme(),
+          classifiers=CLASSIFIERS,
+          packages=find_packages(exclude=['tests', 'tests.*']),
+          setup_requires=['pytest-runner'],
+          tests_require=TESTS_REQUIRE,
+          )
 
 if __name__ == '__main__':
 
