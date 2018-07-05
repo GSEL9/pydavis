@@ -19,9 +19,12 @@ from setuptools import setup, find_packages
 
 PACKAGE_NAME = 'pydavis'
 VERSION = '0.1.0'
+
 KEYWORDS = 'web scraping, database, weather data'
+
 TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
-EXCLUDE = ['pydavis.tests']
+
+EXCLUDE = ['pydavis.tests', 'docs']
 
 
 def readme():
@@ -55,8 +58,8 @@ setup(
     license=license(),
     name=PACKAGE_NAME,
     version=VERSION,
-    packages=find_packages(exclude=['pydavis.tests']),
-    setup_requires=EXCLUDE,
+    packages=find_packages(exclude=EXCLUDE),
+    setup_requires=['pytest-runner'],
     tests_require=TESTS_REQUIRE,
     classifiers=[
         'Development Status :: 3 - Alpha',
