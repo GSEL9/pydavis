@@ -284,6 +284,7 @@ class DataLogger:
 
             host (str): Specifies the host where the server is running. Uses
                 localhost by default.
+
             port (int): Specifies port number. Uses port 3306 by default.
 
             database (str): The name the database where data is stored. Creates
@@ -296,7 +297,6 @@ class DataLogger:
 
             path_to_file (str): Location of existing file, or where a new file
                 will be created.
-
 
         Example:
 
