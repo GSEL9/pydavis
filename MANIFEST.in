@@ -1,4 +1,1 @@
-include *.txt
-include *.rst
-recursive-include pydavis *.py *.c *.h *.pxd *.pyx
-recursive-include docs *.rst *.py
+include README.rst
