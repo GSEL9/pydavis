@@ -25,16 +25,18 @@ class DatabaseManager:
 
     Args:
          user (str): Follows from writing data to table. The MySQL username
-                     credential. Necessary for connecting to database.
+             credential. Necessary for connecting to database.
+
          password (str): Follows from writing data to table. The MySQL
-                         password credential. Necessary for connecting to
-                         database.
+             password credential. Necessary for connecting to database.
+
          host (str): Specifies the host where the server is running. Uses
-                     localhost by default.
+             localhost by default.
+
          port (int): Specifies port number. Uses 3306 by default.
+
          database (str): Follows from writing data to table. Name of an
-                         existing database, or the name of a database that
-                         will be created.
+             existing database, or the name of a database that will be created.
 
     """
 
@@ -47,7 +49,7 @@ class DatabaseManager:
 
         Args:
             new_limit (int): The maximum number of characters assigned to
-                             string attributes.
+                string attributes.
 
         """
 
@@ -216,9 +218,10 @@ class DatabaseManager:
 
         Args:
             table_name (str): Name of the new table.
+
             table_columns (dict): The column labels and corresponding column
-                                  data types as key-value pairs. The data types
-                                  are given in Python format.
+                data types as key-value pairs. The data types are given in
+                Python format.
 
         """
 
@@ -246,7 +249,7 @@ class DatabaseManager:
 
         Args:
             data_types (iterable): A container of Python data types that will
-                                   be converted to MySQL data types.
+                be converted to MySQL data types.
 
         Returns:
             list: The corresponding MySQL data types.
@@ -311,8 +314,9 @@ class DatabaseManager:
 
         Args:
             table_name (str): The name of the table.
+
             table_values (dict): The column labels and corresponding values as
-                                 key-value pairs.
+                key-value pairs.
 
         """
 

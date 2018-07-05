@@ -32,14 +32,13 @@ class WeatherLinkScraper:
 
     Args:
         url (str): The URL reference for the Davis WeatherLink website
-                   displaying the weather report with target parameters.
+            displaying the weather report with target parameters.
+
         target_parameters (dict): The target parameter labels and corresponding
-                                  column numbers of target parameter values as
-                                  key-value pairs. The parameter labels should
-                                  be given as they appear in the Davis
-                                  WeatherLink report. The column number referes
-                                  to the report column number beginning at one
-                                  and counting along each row.
+            column numbers of target parameter values as key-value pairs. The
+            parameter labels should be given as they appear in the Davis
+            WeatherLink report. The column number referes to the report column
+            number beginning at one and counting along each row.
 
     """
 
@@ -76,7 +75,7 @@ class WeatherLinkScraper:
 
         Args:
             unit (str): The unit symbol that will be removed from the
-                        collected raw parameters.
+                collected raw parameters.
 
         """
 
@@ -91,7 +90,7 @@ class WeatherLinkScraper:
 
         Args:
             unit (str): The unit symbol that will no longer be removed from the
-                        collected raw parameters.
+                collected raw parameters.
 
         """
 

@@ -30,15 +30,14 @@ class DataLogger:
 
     Args:
         url (str): The URL reference for the Davis WeatherLink website
-                   displaying the weather report with target parameters.
+            displaying the weather report with target parameters.
+
         target_parameters (dict): The target parameter labels and
-                                  corresponding column numbers of target
-                                  parameter values as key-value pairs. The
-                                  parameter labels should be given as they
-                                  appear in the Davis WeatherLink report.
-                                  The column number referes to the report
-                                  column number beginning at one and counting
-                                  along each row.
+            corresponding column numbers of target parameter values as
+            key-value pairs. The parameter labels should be given as they
+            appear in the Davis WeatherLink report. The column number referes
+            to the report column number beginning at one and counting  along
+            each row.
 
     """
 
@@ -74,13 +73,11 @@ class DataLogger:
 
         Args:
             target_parameters (dict): The target parameter labels and
-                                      corresponding column numbers of target
-                                      parameter values as key-value pairs. The
-                                      parameter labels should be given as they
-                                      appear in the Davis WeatherLink report.
-                                      The column number referes to the report
-                                      column number beginning at one and
-                                      counting along each row.
+                corresponding column numbers of target parameter values as
+                key-value pairs. The parameter labels should be given as they
+                appear in the Davis WeatherLink report. The column number
+                referes to the report column number beginning at one and
+                counting along each row.
 
         Example:
 
@@ -107,8 +104,7 @@ class DataLogger:
 
         Args:
             parameter_labels (iterable of str): The labels of each parameter
-                                                that will be excluded from the
-                                                target parameters.
+                that will be excluded from the target parameters.
 
         Example:
 
@@ -132,6 +128,7 @@ class DataLogger:
 
         Args:
             parameter (str): The target parameter label.
+
             column_number (int): The new reference to the target value.
 
         Example:
@@ -169,7 +166,7 @@ class DataLogger:
 
         Args:
             separator (str): The symbol used to separate items when writing to
-                             file.
+                file.
 
         """
 
@@ -183,7 +180,7 @@ class DataLogger:
 
         Args:
             newline (str): The symbol used as newline character when writing to
-                           file.
+                file.
 
         """
 
@@ -280,20 +277,29 @@ class DataLogger:
 
         Kwargs:
             to_table (bool): Stores in a MySQL database table if True.
+
             user (str): The MySQL username credential.
+
             password (str): The MySQL password credential.
+
             host (str): Specifies the host where the server is running. Uses
-                        localhost by default.
+                localhost by default.
             port (int): Specifies port number. Uses port 3306 by default.
+
             database (str): The name the database where data is stored. Creates
-                            new database if not already existing.
+                new database if not already existing.
+
             table (str): The name of database table where data is stored.
-                         Creates new table if not already existing.
+                Creates new table if not already existing.
+
             to_file (bool): Writes data to file if True.
+
             path_to_file (str): Location of existing file, or where a new file
-                                will be created.
+                will be created.
+
 
         Example:
+
             Logging default parameters to MySQL table:
 
             >>> logger = DataLogger(url)
@@ -303,10 +309,10 @@ class DataLogger:
                                         database='davis',
                                         table='station_wsid')
 
-           Initiate logging to CSV file:
+            Initiate logging to CSV file:
 
-           >>> logger.initiate_logging(to_file=True,
-                                       file_path='./weather_data.csv')
+            >>> logger.initiate_logging(to_file=True,
+                                   file_path='./weather_data.csv')
 
         """
 
