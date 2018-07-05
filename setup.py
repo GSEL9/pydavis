@@ -30,7 +30,7 @@ TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
 def readme():
     """Return the contents of the README.md file."""
 
-    with open('./README/README.rst') as freadme:
+    with open('./README.rst') as freadme:
         return freadme.read()
 
 
@@ -65,6 +65,7 @@ setup(
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Science/Research',
         'Environment :: Console',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ]
