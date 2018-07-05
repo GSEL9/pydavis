@@ -26,7 +26,7 @@ from [WeatherLink](https://www.weatherlink.com/). By instantiating the
 `DataLogger` with an URL, the logging sequence can be initiated. To abort the
 logging sequence, type `CTRL + C` in the command line.
 
-**Storing data in a *MySQL* database:**
+**Storing data in a MySQL database:**
 
 ```
 logger = DataLogger(url)
