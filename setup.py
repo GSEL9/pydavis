@@ -27,7 +27,7 @@ EXCLUDE = ['pydavis.tests']
 def readme():
     """Return the contents of the README.md file."""
 
-    with open('README./README.md') as freadme:
+    with open('./README/README.md') as freadme:
         return freadme.read()
 
 
