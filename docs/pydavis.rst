@@ -4,32 +4,32 @@ pydavis package
 Submodules
 ----------
 
-pydavis.data\_logging module
-----------------------------
+pydavis\.data\_logging module
+-----------------------------
 
 .. automodule:: pydavis.data_logging
     :members:
     :undoc-members:
     :show-inheritance:
 
-pydavis.db\_manager module
---------------------------
+pydavis\.db\_manager module
+---------------------------
 
 .. automodule:: pydavis.db_manager
     :members:
     :undoc-members:
     :show-inheritance:
 
-pydavis.utils module
---------------------
+pydavis\.utils module
+---------------------
 
 .. automodule:: pydavis.utils
     :members:
     :undoc-members:
     :show-inheritance:
 
-pydavis.web\_scraping module
-----------------------------
+pydavis\.web\_scraping module
+-----------------------------
 
 .. automodule:: pydavis.web_scraping
     :members:

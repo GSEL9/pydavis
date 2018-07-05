@@ -3,8 +3,8 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = pydavis
+SPHINXBUILD   = python -msphinx
+SPHINXPROJ    = pydaivs
 SOURCEDIR     = .
 BUILDDIR      = _build
 
