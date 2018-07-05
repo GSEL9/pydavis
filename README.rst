@@ -1,4 +1,4 @@
-Installation_ | Usage_
+Installation_ | Usage_ | License_
 
 
 ##################
@@ -15,7 +15,7 @@ database or a specified file.
 Installation
 ************
 
-The package is installed with `pip <https://pypi.python.org/pypi/pip>`_
+The package can be installed with `pip <https://pypi.python.org/pypi/pip>`_
 
 .. code-block:: bash
 
@@ -27,9 +27,7 @@ Usage
 *****
 
 Through the ``data_logging.py`` module, the weather parameters are
-streamed from `WeatherLink <https://www.weatherlink.com/>`__ websites.
-
-.. code-block:: python
+streamed from `WeatherLink <https://www.weatherlink.com/>`__ websites::
 
    >>> from data_logging import DataLogger
 
@@ -37,7 +35,7 @@ By instantiating the ``DataLogger`` with an URL, the logging sequence can then
 be initiated and data stored according to specified format. Any logging
 sequence is aborted with ``CTRL + C``.
 
-Storing data in a _MySQL_ database
+**Storing data in a MySQL database**
 
 .. code-block:: python
 
@@ -52,7 +50,7 @@ The necessary arguments are *MySQL* login credentials, the name of the database
 and the table. The ``logger`` will create the database and the table if
 necessary.
 
-Storing data in a file
+**Storing data in a file**
 
 .. code-block:: python
 
@@ -62,3 +60,9 @@ Storing data in a file
 
 The location including the name of the file must be passed as argument.
 The ``logger`` will create a new file if necessary.
+
+*******
+License
+*******
+
+MIT, see `MIT license <https://opensource.org/licenses/MIT>`_.
