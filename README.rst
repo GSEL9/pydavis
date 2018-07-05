@@ -2,7 +2,7 @@ Installation_ | Usage_
 
 
 ##################
-pydavis_ package
+pydavis
 ##################
 
 A package intended the logging of weather data parameters monitored by
