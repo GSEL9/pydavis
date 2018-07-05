@@ -20,7 +20,7 @@ AUTHOR = 'Severin Langberg'
 EMAIL = 'Langberg91@gmail.com'
 
 MAIN_PACKAGE = 'pydavis'
-VERSION = '0.1.4'
+VERSION = '0.1.5'
 DESCRIPTION = "Tools to stream weather data from Davis weather stations."
 URL = 'https://github.com/GSEL9/pydavis'
 
