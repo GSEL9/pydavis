@@ -21,12 +21,13 @@ PACKAGE_NAME = 'pydavis'
 VERSION = '0.1.0'
 KEYWORDS = 'web scraping, database, weather data'
 TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
+EXCLUDE = ['pydavis.tests']
 
 
 def readme():
     """Return the contents of the README.md file."""
 
-    with open('README.md') as freadme:
+    with open('README./README.md') as freadme:
         return freadme.read()
 
 
@@ -54,8 +55,8 @@ setup(
     license=license(),
     name=PACKAGE_NAME,
     version=VERSION,
-    packages=find_packages(exclude=['test']),
-    setup_requires=['pytest-runner'],
+    packages=find_packages(exclude=['pydavis.tests']),
+    setup_requires=EXCLUDE,
     tests_require=TESTS_REQUIRE,
     classifiers=[
         'Development Status :: 3 - Alpha',
