@@ -1,4 +1,4 @@
-sphinx>=1.6.3
+sphinx>=1.4.0
 pymysql>=0.8.0
 beautifulsoup4>=4.6.0
 python-dateutil>=2.6.1
