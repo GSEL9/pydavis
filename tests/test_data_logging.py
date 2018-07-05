@@ -15,11 +15,11 @@ __status__ = 'Operational'
 
 
 import os
+import mocks
 import pytest
 
 import nose.tools as ntools
 
-from . import mocks
 from pytest_mock import mocker
 from pydavis import DataLogger
 

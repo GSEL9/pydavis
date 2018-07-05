@@ -18,7 +18,7 @@ import pytest
 
 import nose.tools as ntools
 
-from . import mocks
+import mocks
 from datetime import datetime
 from pytest_mock import mocker
 
