@@ -55,18 +55,3 @@ the table if necessary.
 
 The location including the name of the file must be passed as argument.
 The ``logger`` will create a new file if necessary.
-
-Features
---------
-
-Various logging parameters can be specified through the ``DataLogger``
-such as: \* The target parameters among the available weather station
-parameters. \* The target parameter values such as *Current* or *Today's
-Highs*. \* The time interval between conducting each web scraping. \*
-The value separator and new line characters in the case of writing to
-file.
-
-The ``DatabaseManager`` located in the ``db_manager.py`` module can be
-use to interact with a *MySQL* database. The user can maintain a
-database through various methods without having to explicitly state the
-*MySQL* queries while working in a Python environment.
