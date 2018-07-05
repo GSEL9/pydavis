@@ -18,19 +18,19 @@ from setuptools import setup, find_packages
 
 
 PACKAGE_NAME = 'pydavis'
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 KEYWORDS = 'web scraping, database, weather data'
 
 TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
 
-EXCLUDE = ['pydavis.tests', 'docs', 'bulid']
+EXCLUDE = ['pydavis.tests', 'docs', 'build']
 
 
 def readme():
     """Return the contents of the README.md file."""
 
-    with open('./README/README.md') as freadme:
+    with open('./README/README.rst') as freadme:
         return freadme.read()
 
 
