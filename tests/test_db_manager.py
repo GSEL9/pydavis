@@ -19,10 +19,11 @@ import pytest
 import nose.tools as ntools
 
 from . import mocks
-from pydavis import utils
 from datetime import datetime
 from pytest_mock import mocker
-from pydavis.db_manager import DatabaseManager
+
+from pydavis import utils
+from pydavis import DatabaseManager
 
 
 class TestDatabaseManager:

@@ -19,7 +19,7 @@ import pytest
 import nose.tools as ntools
 
 from datetime import datetime
-from pydavis.web_scraping import WeatherLinkScraper
+from pydavis import WeatherLinkScraper
 
 
 class TestWeatherLinkScraper:

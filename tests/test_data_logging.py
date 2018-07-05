@@ -21,7 +21,7 @@ import nose.tools as ntools
 
 from . import mocks
 from pytest_mock import mocker
-from pydavis.data_logging import DataLogger
+from pydavis import DataLogger
 
 
 class TestDataLogger:
