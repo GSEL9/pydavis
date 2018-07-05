@@ -1,13 +1,6 @@
 pydavis package
 ===============
 
-Subpackages
------------
-
-.. toctree::
-
-    pydavis.tests
-
 Submodules
 ----------
 
