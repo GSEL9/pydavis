@@ -2,7 +2,7 @@ Installation_ | Usage_
 
 
 ##################
-pydavis_ package
+pydavis
 ##################
 
 A package intended the logging of weather data parameters monitored by
@@ -27,7 +27,9 @@ Usage
 *****
 
 Through the ``data_logging.py`` module, the weather parameters are
-streamed from `WeatherLink <https://www.weatherlink.com/>`__ websites.::
+streamed from `WeatherLink <https://www.weatherlink.com/>`__ websites.
+
+.. code-block:: python
 
    >>> from data_logging import DataLogger
 
