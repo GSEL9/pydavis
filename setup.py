@@ -19,7 +19,7 @@ from setuptools import setup, find_packages
 
 MAIN_PACKAGE = 'pydavis'
 DESCRIPTION = "Tools to stream weather data from Davis weather stations."
-VERSION = '0.1.2'
+VERSION = '0.1.3'
 KEYWORDS = 'web scraping, database, weather data'
 EXCLUDE = ['tests', 'docs', 'build']
 TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
@@ -46,26 +46,33 @@ def license():
         return flicense.read()
 
 
-setup(
-    author="Severin Langberg",
-    author_email="Langberg91@gmail.com",
-    description=DESCRIPTION,
-    url='https://github.com/GSEL9/pydavis',
-    install_requires=requirements(),
-    long_description=readme(),
-    license=license(),
-    name=MAIN_PACKAGE,
-    version=VERSION,
-    packages=find_packages(exclude=EXCLUDE),
-    setup_requires=['pytest-runner'],
-    tests_require=TESTS_REQUIRE,
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: MIT License',
-        'Natural Language :: English',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
-    ]
-)
+def package_setup():
+
+    setup(
+        author="Severin Langberg",
+        author_email="Langberg91@gmail.com",
+        description=DESCRIPTION,
+        url='https://github.com/GSEL9/pydavis',
+        install_requires=requirements(),
+        long_description=readme(),
+        license=license(),
+        name=MAIN_PACKAGE,
+        version=VERSION,
+        packages=find_packages(exclude=EXCLUDE),
+        setup_requires=['pytest-runner'],
+        tests_require=TESTS_REQUIRE,
+        classifiers=[
+            'Development Status :: 3 - Alpha',
+            'Intended Audience :: Science/Research',
+            'License :: OSI Approved :: MIT License',
+            'Natural Language :: English',
+            'Programming Language :: Python :: 3',
+            'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: 3.6',
+        ]
+    )
+
+
+if __name__ == '__main__':
+
+    package_setup()
