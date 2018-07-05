@@ -14,7 +14,7 @@ __email__ = 'Langberg91@gmail.no'
 __status__ = 'Operational'
 
 
-__version__ = '0.2.5'
+__version__ = '0.2.6'
 
 
 from . import utils

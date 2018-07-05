@@ -22,7 +22,7 @@ LICENSE = "MIT"
 URL = 'https://github.com/GSEL9/pydavis'
 AUTHOR = 'Severin Langberg'
 EMAIL = 'langberg91@gmail.com'
-VERSION = '0.2.5'
+VERSION = '0.2.6'
 
 TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
 
