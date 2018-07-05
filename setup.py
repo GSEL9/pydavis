@@ -42,7 +42,7 @@ CLASSIFIERS = ['Development Status :: 3 - Alpha',
 def readme():
     """Return the contents of the README.rst file."""
 
-    with open('./README.rst') as freadme:
+    with open('README.rst') as freadme:
         return freadme.read()
 
 
