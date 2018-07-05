@@ -14,12 +14,16 @@ __email__ = 'Langberg91@gmail.no'
 __status__ = 'Operational'
 
 
+import os
 import pytest
 
 import nose.tools as ntools
 
 from datetime import datetime
 from pydavis import WeatherLinkScraper
+
+
+CURRENT_LOC = os.path.dirname(os.path.abspath(__file__))
 
 
 class TestWeatherLinkScraper:
@@ -64,8 +68,10 @@ class TestWeatherLinkScraper:
     def html(self):
         """Returns HTML test data."""
 
+        path_to_file = os.path.join(CURRENT_LOC, 'test_html.txt')
+
         # NOTE: Context manager `rb` signifies "read <bytes>".
-        with open('./test_html.txt', 'rb') as infile:
+        with open(path_to_file, 'rb') as infile:
             html = infile.read()
 
         return html
