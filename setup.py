@@ -24,7 +24,7 @@ KEYWORDS = 'web scraping, database, weather data'
 
 TESTS_REQUIRE = ['pytest', 'pytest_mock', 'nose']
 
-EXCLUDE = ['pydavis.tests', 'docs']
+EXCLUDE = ['pydavis.tests', 'docs', 'bulid']
 
 
 def readme():
