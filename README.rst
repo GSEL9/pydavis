@@ -40,11 +40,17 @@ sequence is aborted with ``CTRL + C``.
 .. code-block:: python
 
     >>> logger = DataLogger(url)
-    >>> logger.initiate_logging(to_table=True,
-                                user='user',
-                                password='password',
-                                database='pydavis',
-                                table='weather_data')
+    >>> logger.initiate_logging(
+             to_table=True,
+             # MySQL username
+             user='user',
+             # MySQL password
+             password='password',
+             # Name of existing or new data base (created)
+             database='pydavis',
+             # Name of existing or new table (create)
+             table='weather_data'
+         )
 
 The necessary arguments are *MySQL* login credentials, the name of the database
 and the table. The ``logger`` will create the database and the table if
