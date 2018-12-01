@@ -75,4 +75,4 @@ The ``logger`` will create a new file if necessary.
 License
 *******
 
-MIT, see `MIT license <https://opensource.org/licenses/MIT>`_.
+[MIT](https://opensource.org/licenses/MIT)
