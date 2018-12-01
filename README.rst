@@ -61,8 +61,12 @@ necessary.
 .. code-block:: python
 
     >>> logger = DataLogger(url)
-    >>> logger.initiate_logging(to_file=True,
-                                path_to_file='./weather_data.csv')
+    >>> logger.initiate_logging(
+            to_file=True,
+            # Name of existing or new file (created) to store 
+            # parameter values.
+            path_to_file='./weather_data.csv'
+        )
 
 The location including the name of the file must be passed as argument.
 The ``logger`` will create a new file if necessary.
