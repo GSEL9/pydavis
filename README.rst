@@ -10,6 +10,11 @@ Davis weather stations. The parameters are obtained through the reports
 generated at Davis WeatherLink websites, and can be streamed to a *MySQL*
 database or a specified file.
 
+************
+To Do
+************
+
+* Checkout `scikit-learn` tokenizer/lemmization tools for processing of raw HTML data.
 
 ************
 Installation
