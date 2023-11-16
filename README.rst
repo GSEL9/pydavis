@@ -2,12 +2,12 @@ Installation_ | Usage_ | License_
 
 
 ##################
-pydavis
+pyDavis
 ##################
 
 A package intended the logging of weather data parameters monitored by
 Davis weather stations. The parameters are obtained through the reports
-generated at Davis WeatherLink websites, and can be streamed to a *MySQL*
+generated at Davis WeatherLink websites, and can be streamed to a ``MySQL``
 database or a specified file.
 
 ************
@@ -57,7 +57,7 @@ sequence is aborted with ``CTRL + C``.
              table='weather_data'
          )
 
-The necessary arguments are *MySQL* login credentials, the name of the database
+The necessary arguments are ``MySQL`` login credentials, the name of the database
 and the table. The ``logger`` will create the database and the table if
 necessary.
 
